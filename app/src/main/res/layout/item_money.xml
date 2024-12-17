@@ -24,13 +24,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/buy"
+                android:text="@string/today"
                 android:layout_marginTop="8dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sell"
+                android:text="@string/previous"
                 android:layout_marginTop="8dp"/>
 
         </LinearLayout>
@@ -48,17 +48,20 @@
             android:layout_marginStart="8dp">
 
             <TextView
+                android:id="@+id/currency_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/usd"/>
+                android:text="USD"/>
 
             <TextView
+                android:id="@+id/today_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="100.0"
                 android:layout_marginTop="8dp"/>
 
             <TextView
+                android:id="@+id/previous_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="110.0"

@@ -4,7 +4,7 @@
     <string name="splash">Splash</string>
     <string name="hello_blank_fragment">Hello!</string>
     <string name="currency">Currency:</string>
-    <string name="buy">Buy:</string>
-    <string name="sell">Sell:</string>
-    <string name="usd">USD</string>
+    <string name="today">Today:</string>
+    <string name="previous">Previous:</string>
+    <string name="soon">Soon...</string>
 </resources>
