@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentActivity
 import com.example.currencyexchange.R
 import com.example.currencyexchange.ViewPagerAdapter
 import com.example.currencyexchange.databinding.FragmentRootBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class RootFragment : Fragment() {
 
@@ -30,7 +31,21 @@ class RootFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentRootBinding.inflate(layoutInflater, container, false)
+
         binding.viewPager.adapter = ViewPagerAdapter(context as FragmentActivity)
+
+        binding.tabLayout.tabIconTint = null
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) {
+            tab, pos ->
+            when(pos) {
+                0 -> {
+                    tab.setIcon(R.drawable.baseline_currency_exchange_24)
+                }
+                1 -> {
+                    tab.setIcon(R.drawable.baseline_currency_bitcoin_24)
+                }
+            }
+        }.attach()
 
         return binding.root
     }
